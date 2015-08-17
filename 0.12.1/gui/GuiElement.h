@@ -36,7 +36,7 @@ class GuiElement : public GuiComponent {
 	virtual void pointInside(int, int);
 	virtual void suppressOtherGUI();
 	virtual void setTextboxText(const std::string &);
-	virtual void handleControllerDirectionHeld(int, Controller::StickDirection);
+	virtual void handleControllerDirectionHeld(int, StickDirection);
 	virtual void drawSelected(int);
 	virtual void drawSliderSelected();
 	virtual void onSelectedChanged();

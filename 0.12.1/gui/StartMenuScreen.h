@@ -26,7 +26,7 @@ namespace Touch {
 		virtual void tick();
 		virtual bool isInGameScreen();
 		virtual void buttonClicked(Button *);
-		virtual void controllerDirectionChanged(int, Controller::StickDirection);
+		virtual void controllerDirectionChanged(int, StickDirection);
 	};
 	
 }

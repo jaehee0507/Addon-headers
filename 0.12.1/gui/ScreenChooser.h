@@ -6,7 +6,7 @@
 class MinecraftClient;
 class SignTileEntity;
 class SurvivalInventoryScreen {
-	public:
+    public:
 	enum CraftingType {};
 };
 class TilePos;

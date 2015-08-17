@@ -1,10 +1,13 @@
 #pragma once
 
+#include "GuiComponent.h"
+
 namespace UI {
 	class GameEventNotification;
 }
 
-class AbstractScreen {   
+class AbstractScreen : public GuiComponent {
+    public:
 	virtual ~AbstractScreen();   
 	virtual void onFocusGained();
 	virtual void onGameEventNotification(UI::GameEventNotification);

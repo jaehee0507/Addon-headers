@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "GuiComponent.h"
+#include "AbstractScreen.h"
 
 class MinecraftClient;
 class TilePos;
@@ -16,7 +16,7 @@ class StickDirection;
 class Font;
 
 //Size : 212
-class Screen : public GuiComponent {
+class Screen : public AbstractScreen {
 	public:
 	char filler1[4];						//76
 	int width;								//80
