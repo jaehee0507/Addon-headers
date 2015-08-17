@@ -18,7 +18,7 @@ class Font;
 //Size : 212
 class Screen : public GuiComponent {
 	public:
-	char filler1[8];						//72
+	char filler1[4];						//76
 	int width;								//80
 	int height;								//84
 	MinecraftClient* mc;					//88
