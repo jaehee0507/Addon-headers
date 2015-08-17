@@ -42,7 +42,7 @@ class ScreenChooser {
 	void pushSelectSkinTypeScreen(bool, bool, std::string const&);
 	void pushScreen(std::shared_ptr<AbstractScreen>, bool);
 	void pushRemotePlayScreen();
-	void pushProgressScreen(bool, std::function<void ()(void)>);
+	void pushProgressScreen(bool, std::function<void ()>);
 	void pushPauseScreen();
 	void pushPausePrevScreen();
 	void pushOptionsScreen(bool, bool, std::string const&);
@@ -69,7 +69,7 @@ class ScreenChooser {
 	void pushAnvilScreen(Player*, TilePos const&);
 	void pushAddExternalServerScreen();
 	void popScreen(AbstractScreen&);
-	void isNewScreensEnabled();
+	bool isNewScreensEnabled() const;
 	void getInBedScreen();
 	void enableNewScreens(bool);
 };
