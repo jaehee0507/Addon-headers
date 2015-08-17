@@ -9,12 +9,12 @@ class IntRectangle;
 //Size : 72
 class ScreenRenderer {
     public:
-    mce::MaterialPtr material1;
-    mce::MaterialPtr material2;
-    mce::MaterialPtr material3;
-    mce::MaterialPtr material4;
-    mce::MaterialPtr material5;
-    mce::MaterialPtr material6;
+    mce::MaterialPtr ui_textured;
+    mce::MaterialPtr ui_fill_color;
+    mce::MaterialPtr ui_fill_gradient;
+    mce::MaterialPtr ui_texture_and_color;
+    mce::MaterialPtr ui_textured_and_glcolor;
+    mce::MaterialPtr ui_fill_stencil;
     
     public:
     static ScreenRenderer* singletonPtr;
