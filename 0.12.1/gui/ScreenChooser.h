@@ -6,6 +6,7 @@
 class MinecraftClient;
 class SignTileEntity;
 class SurvivalInventoryScreen {
+	public:
 	enum CraftingType {};
 };
 class TilePos;
@@ -28,8 +29,8 @@ class ScreenChooser {
 	char filler1[16];				//4
 
 	public:
-	void ScreenChooser(MinecraftClient&, bool, bool);
-	void ~ScreenChooser();
+	ScreenChooser(MinecraftClient&, bool, bool);
+	~ScreenChooser();
 	void setXblLoginScreen();
 	void setUpsellScreen(bool);
 	void setStartMenuScreen();
