@@ -25,8 +25,8 @@ class Button : public GuiElement {
     virtual void setPressed();
     virtual void setPressed(bool);
     virtual void setMsg(std::string const&);
-	virtual void getYImage(bool);
-	virtual void renderBg(MinecraftClient *, int, int);
+    virtual void getYImage(bool);
+    virtual void renderBg(MinecraftClient *, int, int);
     virtual void renderFace(MinecraftClient *, int, int);
     int _getWidth(MinecraftClient *, std::string const&, int);
     bool hovered(MinecraftClient *, int, int);
