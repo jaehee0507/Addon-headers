@@ -10,7 +10,7 @@ class Button : public GuiElement {
     int id;                         //172
     bool toogled;                   //176
     bool pressed;                   //177
-	bool overrideScreenRendering;	//178
+    bool overrideScreenRendering;    //178
     
     public:
     Button(int, int, int, int, int, const std::string &, bool);
@@ -31,5 +31,5 @@ class Button : public GuiElement {
     bool isInside(int, int);
     bool isOveridingScreenRendering();
     bool isPressed(int, int);
-	void setOverrideScreenRendering(bool);
+    void setOverrideScreenRendering(bool);
 };
