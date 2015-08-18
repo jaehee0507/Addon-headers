@@ -9,7 +9,7 @@ class UIRenderContext;
 class InputMode;
 class DirectionId;
 class MCOEvent;
-class MojangconnectionStatus;
+class MojangConnectionStatus;
 class Button;
 class GuiElement;
 class StickDirection;
@@ -51,7 +51,7 @@ class Screen : public AbstractScreen {
 	virtual void handlePointerPressed(bool);
 	virtual void handleDirection(DirectionId, float, float);
 	virtual bool handleBackEvent(bool);
-	virtual void handleTextChar(std::string const&);
+	virtual void handleTextChar(std::string const&, bool);
 	virtual void setTextboxText(std::string const&);
 	virtual void handleLicenseChanged();
 	virtual bool renderGameBehind() const;
@@ -69,7 +69,7 @@ class Screen : public AbstractScreen {
 	virtual void feedMCOEvent(MCOEvent);
 	virtual bool supppressedBySubWindow();
 	virtual void onTextBoxUpdated(int);
-	virtual void onMojangConnectorStatus(MojangconnectionStatus);
+	virtual void onMojangConnectorStatus(MojangConnectionStatus);
 	virtual void handleScrollWheel(float);
 	virtual void handlePointerAction(int, int, bool);
 	virtual void updateTabButtonSelection();
