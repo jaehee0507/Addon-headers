@@ -29,7 +29,7 @@ bool MyScreen::renderGameBehind() const {
 
 void MyScreen::render(int a, int b, float c) {
     Screen::renderMenuBackground(c);
-    screenRenderer.drawString(fontObj, myHdr->text, 4, 80, Color::YELLOW);
+    screenRenderer.drawString(fontObj, "Drawing String", 4, 80, Color::YELLOW);
     Screen::render(a, b, c);
 }
 
