@@ -8,7 +8,7 @@ class Button : public GuiElement {
     char filler1[48];               //120
     std::string displayString;      //168
     int id;                         //172
-    bool toogled;                   //176
+    bool toggled;                   //176
     bool pressed;                   //177
     bool overrideScreenRendering;   //178
     
@@ -16,7 +16,7 @@ class Button : public GuiElement {
     Button(int, int, int, int, int, std::string const&, bool);
     Button(int, int, int, std::string const&);
     Button(int, std::string const&, bool);
-    virtual void ~Button();
+    virtual ~Button();
     virtual void render(MinecraftClient*, int, int);
     virtual void pointerReleased(MinecraftClient*, int, int);
     virtual void drawPressed(int);

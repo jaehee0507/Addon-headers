@@ -47,7 +47,6 @@ class GuiElement : public GuiComponent {
     virtual void hasChildren() const;
     void clearBackground();
     void isSelected();
-    void onSelectedChanged();
     void setActiveAndVisibility(bool);
     void setActiveAndVisibility(bool, bool);
     void setBackground(Color const&);

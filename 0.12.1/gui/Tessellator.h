@@ -2,7 +2,9 @@
 
 #include "MemoryTracker.h"
 
-namespace {
+typedef unsigned char uchar;
+
+namespace mce {
 	class VertexFormat;
 	class PrimitiveMode;
 	class MaterialPtr;
@@ -26,7 +28,7 @@ class Tessellator : public MemoryTracker {
     public:
     Tessellator(MemoryTracker*);
 	virtual ~Tessellator();
-	virtual void getStats();
+	virtual void getStats() const;
     void _allocateIndices(int);
     void _tex(Vec2 const&, int);
     void addOffset(Vec3 const&);
