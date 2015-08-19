@@ -5,9 +5,9 @@
 typedef unsigned char uchar;
 
 namespace mce {
-	class VertexFormat;
-	class PrimitiveMode;
-	class MaterialPtr;
+    class VertexFormat;
+    class PrimitiveMode;
+    class MaterialPtr;
 }
 class Vec2;
 class Color;
@@ -17,18 +17,18 @@ class Tessellator : public MemoryTracker {
     public:
 	//Size : 24
 	class CurrentVertexPointers {
-	    public:
-        CurrentVertexPointers(uchar*, mce::VertexFormat const&);
-        void nextVertex();
-    };
+            public:
+            CurrentVertexPointers(uchar*, mce::VertexFormat const&);
+            void nextVertex();
+        };
 	
     public:
-	static Tessellator instance;
+    static Tessellator instance;
 	
     public:
     Tessellator(MemoryTracker*);
-	virtual ~Tessellator();
-	virtual void getStats() const;
+    virtual ~Tessellator();
+    virtual void getStats() const;
     void _allocateIndices(int);
     void _tex(Vec2 const&, int);
     void addOffset(Vec3 const&);
