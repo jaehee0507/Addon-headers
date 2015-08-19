@@ -19,16 +19,16 @@ class Font;
 class Screen : public AbstractScreen {
     public:
     char filler1[4];                        //76
-    int width;                                //80
-    int height;                                //84
+    int width;                              //80
+    int height;                             //84
     MinecraftClient* mc;                    //88
     std::vector<Button*> buttonList;        //92
-    char filler2[36];                        //104
-    std::vector<GuiElement*> elementList;    //140
-    char filler3[12];                        //152
-    Font* fontObj;                            //164
-    Button* selectedButton;                    //168
-    char filler4[28];                        //172
+    char filler2[36];                       //104
+    std::vector<GuiElement*> elementList;   //140
+    char filler3[12];                       //152
+    Font* fontObj;                          //164
+    Button* selectedButton;                 //168
+    char filler4[28];                       //172
     mce::MaterialPtr ui_cubemap;            //200
     
     public:

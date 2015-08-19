@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include "Screen.h"
 #include "TButton.h"
 
@@ -17,17 +18,22 @@ namespace Touch {
         char filler2[36];
         
         public:
-        //Outdated
-        StartMenuScreen();
+        static int currentSplash;
+        static std::vector<std::string> mSplashes;
+        
+        public:
+        StartMenuScreen(void);
         virtual ~StartMenuScreen();
+        virtual void tick();
+        virtual bool handleBackEvent(bool);
         virtual void render(int, int, float);
         virtual void init();
         virtual void setupPositions();
-        virtual bool handleBackEvent(bool);
-        virtual void tick();
-        virtual bool isInGameScreen();
-        virtual void buttonClicked(Button *);
+        virtual void buttonClicked(Button*);
         virtual void controllerDirectionChanged(int, StickDirection);
+        void _updateLicense();
+        void chooseRandomSplash();
+        void setupPlayButtons(bool);
     };
     
 }
