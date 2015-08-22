@@ -5,9 +5,10 @@
 namespace Touch {
     class TButton;
 }
-namespace Options {
+class Options {
+    public:
     class Option;
-}
+};
 class Screen;
 
 //Size : 180

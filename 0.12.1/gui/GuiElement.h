@@ -32,12 +32,12 @@ class GuiElement : public GuiComponent {
     virtual void focusedMouseReleased(MinecraftClient*, int, int);
     virtual void handleButtonPress(MinecraftClient*, short);
     virtual void handleTextChar(MinecraftClient*, std::string const&, bool);
-    virtual void backPressed(MinecraftClient*, bool);
+    virtual bool backPressed(MinecraftClient*, bool);
     virtual void setKeyboardHeight(MinecraftClient*, int);
     virtual void pointInside(int, int);
-    virtual void suppressOtherGUI();
+    virtual bool suppressOtherGUI();
     virtual void setTextboxText(std::string const&);
-    virtual void hasFocus() const;
+    virtual bool hasFocus() const;
     virtual void setFocus(bool);
     virtual void handleControllerDirectionHeld(int, StickDirection);
     virtual void drawSelected(int);
