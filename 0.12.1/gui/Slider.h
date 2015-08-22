@@ -2,9 +2,10 @@
 
 #include "GuiElement.h"
 
-namespace Options {
+class Options {
+    public:
     class Option;
-}
+};
 
 //Size : 176
 class Slider : public GuiElement {
