@@ -49,7 +49,6 @@ class Tessellator : public MemoryTracker {
     void getColor();
     void getPolygonCount() const;
     void init();
-    void instance
     void noColor();
     void normal(float, float, float);
     void normal(Vec3 const&);
