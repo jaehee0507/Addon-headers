@@ -3,6 +3,7 @@
 #include <memory>
 #include "App.h"
 
+class Vibration;
 class ExternalFileLevelStorageSource;
 class ServerCommandParser;
 class GameSession;
@@ -16,6 +17,7 @@ class Player;
 class Level;
 class LevelSettings;
 class LegacyClientNetworkHandler;
+class SoundEngine;
 
 //Size : 108
 class Minecraft : public App {
@@ -56,14 +58,14 @@ class Minecraft : public App {
     virtual void updateSoundLocation(Mob*, float);
     virtual bool isServerVisible();
     virtual void sendLocalMessage(std::string const&, std::string const&);
-    virtual void getPlayer();
+    virtual Player* getPlayer();
     virtual void onInternetUpdate();
     virtual void onPrepChangeDimension(Player&);
     virtual void onDimensionChanged(Player&);
     virtual void createLocalClientNetworkHandler();
-    virtual void getVibration();
+    virtual Vibration* getVibration();
     virtual void createSkin(bool);
-    virtual void getSoundPlayer();
+    virtual SoundEngine* getSoundPlayer();
     void createGameMode(GameType, Level&);
     void createLevel(std::string const&, std::string const&, LevelSettings const&);
     ServerCommandParser* getCommandParser();
