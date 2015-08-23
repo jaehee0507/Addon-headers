@@ -10,6 +10,7 @@ class GameSession;
 class RakNetInstance;
 class RakNetPacketSender;
 class TerrainAtlas;
+class GameMode;
 class GameType;
 class Timer;
 class Mob;
@@ -18,6 +19,7 @@ class Level;
 class LevelSettings;
 class LegacyClientNetworkHandler;
 class SoundEngine;
+class NetEventCallback;
 
 //Size : 108
 class Minecraft : public App {
@@ -81,7 +83,6 @@ class Minecraft : public App {
     bool isOnlineClient();
     void lockForControl();
     void onClientStartedLevel(std::unique_ptr<Level>);
-    void onPrepChangeDimension(Player&);
     void removeAllPlayers();
     void resetGameSession();
     void restartMultiplayerHost(int, int);

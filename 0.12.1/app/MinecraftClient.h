@@ -67,7 +67,7 @@ class MinecraftClient : public Minecraft {
     char filler5[48];                    //384
     int keyboardHeight;                  //432
     MinecraftTelemetry* mcTelemetry;     //436
-    char filler5[8];                     //440
+    char filler6[8];                     //440
     
     public:
     static int _hasInitedStatics;
@@ -129,7 +129,7 @@ class MinecraftClient : public Minecraft {
     void getSituationalMusic();
     SkinRepository* getSkinRepository();
     UIDefinitionStore* getUIDefStore();
-    UserManager* getUserManager() const;
+    Social::UserManager* getUserManager() const;
     void grabMouse();
     void handleAttackActionButtonRelease();
     void handleBackNoReturn();
@@ -229,5 +229,4 @@ class MinecraftClient : public Minecraft {
     void updateScheduledScreen();
     void updateStats();
     void useController();
-    void useTouchscreen();
 };
