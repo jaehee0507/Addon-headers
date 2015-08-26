@@ -13,7 +13,7 @@ class TilePos;
 class Vec3;
 class Entity;
 
-//Size : 92
+//Size : 96
 class GameMode {
     public:
     //void** vtable;                    //0
@@ -23,7 +23,7 @@ class GameMode {
     char filler2[28];                   //44
     SoundPlayer* soundPlayer;           //72
     bool trialMode;                     //76
-    char filler3[15];                   //77
+    char filler3[19];                   //77
     
     public:
     GameMode(PacketSender&, Level&, SoundPlayer&, Vibration&);
@@ -46,7 +46,7 @@ class GameMode {
     virtual void handleCloseInventory(int, Player*);
     virtual void releaseUsingItem(Player*);
     virtual void setTrialMode(bool);
-    virtual void isInTrialMode();
+    virtual bool isInTrialMode();
     void _destroyBlockInternal(Player*, int, int, int, signed char);
     void creativeDestroyBlock(Player*, int, int, int, signed char);
     void getHitProgress(float);
