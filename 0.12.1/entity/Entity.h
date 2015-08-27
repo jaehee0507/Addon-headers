@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include "SyncedEntityData.h"
-#inlcude "../util/AABB.h"
+#include "../util/AABB.h"
 
 class TileSource;
 class Level;
