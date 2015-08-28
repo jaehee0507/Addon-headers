@@ -20,7 +20,7 @@ class ItemInstance {
     char filler2[4];        //4
     Item* item;             //8
     Tile* tile;             //12
-    bool isNull;            //16
+    bool _isNull;           //16
     
     public:
     static std::string TAG_DISPLAY;
