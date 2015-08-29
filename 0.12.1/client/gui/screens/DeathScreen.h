@@ -2,6 +2,10 @@
 
 #include "Screen.h"
 
+namespace Touch {
+    class TButton;
+}
+
 //Size : 236
 class DeathScreen : public Screen {
     public:
