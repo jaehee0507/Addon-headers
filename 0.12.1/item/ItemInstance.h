@@ -98,7 +98,7 @@ class ItemInstance {
     bool matchesNulls(ItemInstance const*, ItemInstance const*);
     void mineBlock(int, int, int, int, Mob*);
     bool operator!=(ItemInstance const&) const;
-    bool operator=(ItemInstance const&);
+    ItemInstance& operator=(ItemInstance const&);
     bool operator==(ItemInstance const&) const;
     void releaseUsing(Player*, int);
     void remove(int);
