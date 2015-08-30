@@ -99,7 +99,7 @@ class Entity {
     virtual bool canShowNameTag();
     virtual void setNameTagVisible(bool);
     virtual std::string getNameTag() const;
-    virtual bool setNameTag(std::string const&);
+    virtual void setNameTag(std::string const&);
     virtual bool isInWater() const;
     virtual bool isInWaterOrRain();
     virtual bool isInLava();
@@ -144,7 +144,7 @@ class Entity {
     virtual void saveWithoutId(CompoundTag&);
     virtual void load(CompoundTag const&);
     virtual void loadLinks(CompoundTag const&, std::vector<EntityLink>&);
-    virtual void getEntityTypeId() const = 0;
+    virtual int getEntityTypeId() const = 0;
     virtual void queryEntityRenderer();
     virtual void getSourceUniqueID();
     virtual void setOnFire(int);
