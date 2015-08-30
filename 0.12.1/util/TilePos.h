@@ -5,9 +5,9 @@ class ChunkPos;
 
 class TilePos {
     public:
-    float x;
-    float y;
-    float z;
+    int x;
+    int y;
+    int z;
     
     public:
     static TilePos ZERO;
