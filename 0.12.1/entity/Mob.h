@@ -20,7 +20,7 @@ class Mob : public Entity {
     public:
     char filler1[104];                                  //360
     float yHeadRot;                                     //464
-    char filler2[3128-468];                             //468
+    char filler2[2660];                                 //468
     std::string texture;                                //3128
     char filler3[68];                                   //3132
     LookControl* lookControl;                           //3200
