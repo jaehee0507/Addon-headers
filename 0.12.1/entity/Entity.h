@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-#include "SyncedEntityData.h"
+#include "SynchedEntityData.h"
 #include "../util/AABB.h"
 
 class TileSource;
@@ -28,7 +28,7 @@ class Entity {
     public:
     //void** vtable;                        //0
     char filler1[4];                        //4
-    SyncedEntityData data;                  //8
+    SynchedEntityData data;                  //8
     float posX;                             //24
     float posY;                             //28
     float posZ;                             //32
@@ -198,7 +198,6 @@ class Entity {
     void getInterpolatedPosition2(float) const;
     void getInterpolatedRotation(float) const;
     void getLinks() const;
-    void getPortalWaitTime() const;
     void getRandomPointInAABB(Random&);
     void getRotation() const;
     void getStatusFlag(int) const;
