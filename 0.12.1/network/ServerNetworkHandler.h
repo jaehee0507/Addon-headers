@@ -3,6 +3,7 @@
 #include "NetEventCallback.h"
 #include "../level/LevelListener.h"
 
+class Minecraft;
 class ServerPlayer;
 class SkinInfoFactory;
 

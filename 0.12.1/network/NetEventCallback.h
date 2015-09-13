@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 class Player;
 namespace RakNet {
     class RakNetGUID;
