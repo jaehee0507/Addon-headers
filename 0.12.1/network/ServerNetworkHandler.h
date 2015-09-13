@@ -4,6 +4,9 @@
 #include "../level/LevelListener.h"
 
 class Minecraft;
+class GameMode;
+class IRakNetInstance;
+class PacketSender;
 class ServerPlayer;
 class SkinInfoFactory;
 
