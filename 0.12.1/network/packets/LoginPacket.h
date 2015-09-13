@@ -9,7 +9,7 @@ class LoginPacket : public Packet {
     char filler1[44];                //20
     bool isSkinSlim;                 //64
     char filler2[3];                 //65
-    std::string skindata;            //68
+    char* skindata;                  //68
     
     public:
     virtual ~LoginPacket();
