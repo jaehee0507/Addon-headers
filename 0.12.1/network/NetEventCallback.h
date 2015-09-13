@@ -3,6 +3,7 @@
 class Player;
 namespace RakNet {
     class RakNetGUID;
+    class SystemAddress;
 }
 class DisconnectPacket;
 class LoginPacket;
@@ -66,7 +67,7 @@ namespace mce {
     class UUID;
 }
 
-class NetEvenCallback {
+class NetEventCallback {
     public:
     virtual void onPlayerReady(Player&);
     virtual ~NetEventCallback();
@@ -134,8 +135,8 @@ class NetEvenCallback {
     virtual void handle(RakNet::RakNetGUID const&, RespawnPacket*);
     virtual void onPlayerVerified(RestCallTagData const&);
     virtual void onPlayerVerifiedFailed(RestCallTagData const&);
-    void findPlayer(Level&, EntityUniqueID)
-    void findPlayer(Level&, EntityUniqueID, mce::UUID const&)
-    void findPlayer(Level&, mce::UUID const&)
-    void findPlayer(Level&, RakNet::RakNetGUID const*)
+    void findPlayer(Level&, EntityUniqueID);
+    void findPlayer(Level&, EntityUniqueID, mce::UUID const&);
+    void findPlayer(Level&, mce::UUID const&);
+    void findPlayer(Level&, RakNet::RakNetGUID const*);
 };

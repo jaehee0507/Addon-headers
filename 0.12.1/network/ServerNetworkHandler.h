@@ -3,6 +3,9 @@
 #include "NetEventCallback.h"
 #include "../level/LevelListener.h"
 
+class ServerPlayer;
+class SkinInfoFactory;
+
 class ServerNetworkHandler : public NetEventCallback, public LevelListener {
     public:
     ServerNetworkHandler(Minecraft*, Level&, GameMode*, IRakNetInstance&, PacketSender&, SkinInfoFactory&, Player*);;
