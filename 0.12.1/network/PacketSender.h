@@ -3,6 +3,7 @@
 class Packet;
 namespace RakNet {
     class RakNetGUID;
+    class AddressOrGUID;
 }
 
 class PacketSender {
