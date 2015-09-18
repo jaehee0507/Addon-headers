@@ -25,10 +25,10 @@ class Util {
     static void removeAll(std::string&, char const**, int);
     static void removeIllegalChars(std::string const&);
     static void simpleFormat(std::string const&, std::vector<std::string>);
-    static void split(std::string const&, char);
+    static std::vector<std::string> split(std::string const&, char);
     static void split(std::string const&, std::vector<std::string> const&, bool);
     static void splitString(std::string const&, char, std::vector<std::string>&);
-    static void startsWith(std::string const&, std::string const&);
+    static bool startsWith(std::string const&, std::string const&);
     static bool stringContains(std::string const&, char);
     static void stringReplace(std::string&, std::string const&, std::string const&, int);
     static void stringTrim(std::string const&);

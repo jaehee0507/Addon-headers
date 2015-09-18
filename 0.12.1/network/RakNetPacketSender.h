@@ -4,6 +4,9 @@
 
 class IRakNetInstance;
 class NetEventCallback;
+namespace RakNet {
+    class AddressOrGUID;
+}
 
 class RakNetPacketSender : public PacketSender {
     public:

@@ -31,11 +31,11 @@ class ChatScreen : public Screen {
     virtual void removed();
     virtual void tick();
     virtual void handleButtonPress(MinecraftClient*, short);
-    virtual void handleBackEvent(bool);
+    virtual bool handleBackEvent(bool);
     virtual void handleTextChar(std::string const&, bool);
     virtual void setTextboxText(std::string const&);
-    virtual void renderGameBehind() const;
-    virtual void closeOnPlayerHurt() const;
+    virtual bool renderGameBehind() const;
+    virtual bool closeOnPlayerHurt() const;
     virtual void render(int, int, float);
     virtual void init();
     virtual void setupPositions();
