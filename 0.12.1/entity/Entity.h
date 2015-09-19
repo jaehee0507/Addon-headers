@@ -201,7 +201,7 @@ class Entity {
     void getRandomPointInAABB(Random&);
     void getRotation() const;
     void getStatusFlag(int) const;
-    void getUniqueID() const;
+    EntityUniqueID getUniqueID() const;
     void getViewVector(float) const;
     void getViewVector2(float) const;
     void hasUniqueID() const;

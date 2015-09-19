@@ -9,6 +9,7 @@ class IRakNetInstance;
 class PacketSender;
 class ServerPlayer;
 class SkinInfoFactory;
+class Player;
 
 class ServerNetworkHandler : public NetEventCallback, public LevelListener {
     public:
@@ -51,8 +52,8 @@ class ServerNetworkHandler : public NetEventCallback, public LevelListener {
     void disallowIncomingConnections();
     void disconnectClient(RakNet::RakNetGUID const&, std::string const&);
     void displayGameMessage(std::string const&, std::string const&);
-    void getPlayer(RakNet::RakNetGUID const&);
-    void getPlayer(RakNet::RakNetGUID const&, EntityUniqueID const&);
+    Player* getPlayer(RakNet::RakNetGUID const&);
+    Player* getPlayer(RakNet::RakNetGUID const&, EntityUniqueID const&);
     void numberOfConnections();
     void onReady_ClientGeneration(Player*, RakNet::RakNetGUID const&);
     void sendLoginMessageLocal(int, RakNet::RakNetGUID const&, LoginPacket*);

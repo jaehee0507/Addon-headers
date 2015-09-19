@@ -167,9 +167,7 @@ class Mob : public Entity {
     BaseAttributeMap* getAttributes();
     void getCurrentSwingDuration();
     void getEffect(MobEffect*) const;
-    void getHeadHeight() const;
     int getHealth();
-    void getLastHurtMob();
     LookControl* getLookControl();
     int getMaxHealth();
     MoveControl* getMoveControl();
@@ -198,5 +196,4 @@ class Mob : public Entity {
     void tickEffects();
     void updateInvisibilityStatus();
     void updateMobId(EntityUniqueID&);
-    void updateWalkAnim();
 };

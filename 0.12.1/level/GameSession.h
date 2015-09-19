@@ -5,6 +5,7 @@
 class Level;
 class GameMode;
 class ServerNetworkHandler;
+class ClientNetworkHandler;
 class LegacyClientNetworkHandler;
 class NetEventCallback;
 class RakNetPacketSender;
@@ -14,7 +15,7 @@ class GameSession {
     public:
     Level* level;                                           //0
     GameMode* gameMode;                                     //4
-    ServerNetworkHandler* severHandler;                     //8
+    ServerNetworkHandler* serverHandler;                     //8
     LegacyClientNetworkHandler* clientHandler;              //12
     NetEventCallback* netCallback;                          //16
     RakNetPacketSender* packetSender;                       //20
