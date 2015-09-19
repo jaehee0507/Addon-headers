@@ -1,6 +1,6 @@
 #pragma once
 
-#include "GuiComponent.h"
+#include "../GuiComponent.h"
 
 namespace UI {
     class GameEventNotification;

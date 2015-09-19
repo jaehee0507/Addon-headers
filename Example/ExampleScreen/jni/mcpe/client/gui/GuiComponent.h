@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ScreenRenderer.h"
+#include "../renderer/ScreenRenderer.h"
 
 //Size : 76
 class GuiComponent {

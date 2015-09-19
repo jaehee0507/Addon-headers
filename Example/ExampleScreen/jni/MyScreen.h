@@ -1,6 +1,6 @@
 #pragma once
 
-#include "mcpe/gui/Screen.h"
+#include "mcpe/client/gui/screens/Screen.h"
 
 namespace Touch {
     class TButton;

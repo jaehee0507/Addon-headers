@@ -5,9 +5,10 @@
 #include <android/log.h>
 #include "mcpelauncher.h"
 
-#include "mcpe/gui/StartMenuScreen.h"
-#include "mcpe/gui/TButton.h"
-#include "mcpe/gui/ScreenChooser.h"
+#include "mcpe/client/gui/screens/StartMenuScreen.h"
+#include "mcpe/client/gui/TButton.h"
+#include "mcpe/client/gui/screens/ScreenChooser.h"
+#include "mcpe/client/MinecraftClient.h"
 #include "MyScreen.h"
 #include "MyScreen.cpp"
 
@@ -18,8 +19,6 @@ inline void HOOK(const char* sym, void* hook, void** org) {
     void* symb = dlsym(RTLD_DEFAULT, sym);
     mcpelauncher_hook(symb, hook, org);
 }
-
-class MinecraftClient;
 
 Touch::TButton* myBtn;
 
@@ -46,9 +45,7 @@ void start_decon_hook(Touch::StartMenuScreen* thiz) {
 void (*start_btn)(Touch::StartMenuScreen*, Button*);
 void start_btn_hook(Touch::StartMenuScreen* thiz, Button* btn) {
     if(btn->id == myBtn->id) {
-        ScreenChooser* sc = *(ScreenChooser**)(((uintptr_t) thiz->mc)+112);
-        //Bcuz I didn't make MinecraftClient header :P
-        
+        ScreenChooser* sc = thiz->mc->screenChooser;
         shared_ptr<MyScreen> myscr(new MyScreen());
         sc->pushScreen(myscr, true);
     }

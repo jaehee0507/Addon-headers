@@ -1,8 +1,8 @@
 #include "MyScreen.h"
-#include "mcpe/gui/TButton.h"
-#include "mcpe/gui/THeader.h"
-#include "mcpe/gui/ScreenChooser.h"
-#include "mcpe/gui/Color.h"
+#include "mcpe/client/gui/TButton.h"
+#include "mcpe/client/gui/THeader.h"
+#include "mcpe/client/gui/screens/ScreenChooser.h"
+#include "mcpe/client/gui/Color.h"
 
 MyScreen::MyScreen() {
     //Make variables be NULL
@@ -60,7 +60,6 @@ void MyScreen::buttonClicked(Button* btn) {
 }
 
 void MyScreen::closeScreen() {
-    ScreenChooser* sc = *(ScreenChooser**)(((uintptr_t) mc)+112);
-    //Didn't make MinecraftClient header yet :P
+    ScreenChooser* sc = mc->screenChooser;
     sc->setStartMenuScreen();
 }

@@ -81,7 +81,7 @@ class Screen : public AbstractScreen {
     virtual void controllerDirectionHeld(int, StickDirection);
     void tabNext();
     void tabPrev();
-    void renderProgressBar(float);
+    void renderProgressBar(float) const;
     void processControllerDirection(int);
     void getCursorMoveThrottle();
 };
