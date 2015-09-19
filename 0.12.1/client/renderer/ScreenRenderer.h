@@ -36,5 +36,5 @@ class ScreenRenderer {
     void fillHorizontalGradient(int, int, int, int, Color const&, Color const&);
     void drawRect(int, int, int, int, Color const&, int);
     void drawRect(int, int, int, int, Color const&, Color const&, Color const&, Color const&, int);
-    ScreenRenderer* singleton();
+    static ScreenRenderer* singleton();
 };
