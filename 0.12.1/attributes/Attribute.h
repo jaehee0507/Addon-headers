@@ -4,11 +4,13 @@
 
 class Attribute {
     public:
-    float defaultValue;
-    float minValue;
-    float maxValue;
-    bool clientSyncable;
-    std::string name;
+    float defaultValue;            //0
+    float minValue;                //4
+    float maxValue;                //8
+    bool clientSyncable;           //12
+    char filler1[3];               //13
+    std::string name;              //16
+    char filler2[4];               //20
     
     public:
     Attribute(std::string const&, float, float, float, bool);

@@ -12,6 +12,7 @@ class Attribute;
 class MobEffectInstance;
 class ItemEntity;
 class MobEffect;
+class AttributeInstance;
 class AttributeBuffType;
 class ListTag;
 
@@ -114,8 +115,8 @@ class Mob : public Entity {
     virtual void doHurtTarget(Entity*);
     virtual void canBeControlledByRider();
     virtual void teleportTo(float, float, float);
-    virtual void getMutableAttribute(Attribute const&);
-    virtual void getAttribute(Attribute const&) const;
+    virtual AttributeInstance* getMutableAttribute(Attribute const&);
+    virtual AttributeInstance* getAttribute(Attribute const&) const;
     virtual void getEquipmentCount() const;
     virtual void getArmorValue();
     virtual void getArmorCoverPercentage();

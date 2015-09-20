@@ -3,7 +3,7 @@
 #include "Mob.h"
 #include "Abilities.h"
 #include "../item/ItemInstance.h"
-#include "../util/Attribute.h"
+#include "../attributes/Attribute.h"
 #include "../util/TilePos.h"
 #include "../network/RakNetGUID.h"
 
