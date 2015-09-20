@@ -3,7 +3,9 @@
 #include "GuiComponent.h"
 #include "Color.h"
 
+class MinecraftClient;
 class NinePatchLayer;
+class StickDirection;
 
 //Size : 120
 class GuiElement : public GuiComponent {

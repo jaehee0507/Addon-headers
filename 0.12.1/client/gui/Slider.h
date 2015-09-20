@@ -1,11 +1,7 @@
 #pragma once
 
 #include "GuiElement.h"
-
-class Options {
-    public:
-    class Option;
-};
+#include "../settings/Options.h
 
 //Size : 176
 class Slider : public GuiElement {

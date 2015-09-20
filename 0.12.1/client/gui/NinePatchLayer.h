@@ -3,7 +3,7 @@
 #include "GuiElement.h"
 
 class NinePatchDescription;
-class Tessllator;
+class Tessellator;
 class Textures;
 
 //Size : 520

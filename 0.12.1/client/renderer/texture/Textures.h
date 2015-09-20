@@ -23,7 +23,7 @@ class Textures {
     void getDynamicTextureData(DynamicTexture) const;
     void getDynamicTextureDataModify(DynamicTexture);
     void getTexture(std::string const&);
-    void getTextureData(std::string const&);
+    TextureData* getTextureData(std::string const&);
     void loadDynamicTextures();
     void loadList(std::string const&, std::function<void ()>);
     void loadTexture(std::string const&, bool, bool, bool);

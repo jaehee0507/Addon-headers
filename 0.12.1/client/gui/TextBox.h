@@ -1,14 +1,11 @@
 #pragma once
 
 #include "GuiElement.h"
+#include "../settings/Options.h
 
 namespace Touch {
     class TButton;
 }
-class Options {
-    public:
-    class Option;
-};
 class Screen;
 
 //Size : 180
