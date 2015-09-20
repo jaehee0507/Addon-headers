@@ -95,7 +95,7 @@ class Mob : public Entity {
     virtual void shouldDespawn() const;
     virtual void getAttackAnim(float);
     virtual bool isBaby() const;
-    virtual void getCarriedItem();
+    virtual ItemInstance* getCarriedItem();
     virtual void setCarriedItem(ItemInstance const&);
     virtual void getItemUseDuration();
     virtual void swing();
