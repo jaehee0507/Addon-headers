@@ -7,12 +7,19 @@
 #include "../util/TilePos.h"
 #include "../network/RakNetGUID.h"
 
+class PacketSender;
+namespace mce {
+    class UUID;
+}
 class Inventory;
 class PlayerChunkSource;
 class SkinInfoData;
 class BatchPacket;
 class ChunkSource;
 class Tick;
+class TileEntity;
+class TelemetryEventPacket;
+class Packet;
 class ChestTileEntity;
 class FurnaceTileEntity;
 class EnchantingTableEntity;
