@@ -1,6 +1,7 @@
 #pragma once
 
-class ImageData;
+#include "ImageData.h"
+
 namespace mce {
     class Texture;
 }
@@ -8,15 +9,10 @@ namespace mce {
 //Size : 88
 class TextureData {
     public:
-    int width;                     //0
-    int height;                    //4
-    char* pixels;                  //8
-    char filler1[8];               //12
-    bool idk;                      //20
-    char filler2[3];               //21
-    //mce::Texture texture;        //24
-    //std::vector<ImageData>;      //76
-    char filler3[64];              //24
+    bool idk;                          //20
+    //mce::Texture texture;
+    char filler1[55];                  //21
+    std::vector<ImageData> imgVec;     //76
     
     public:
     TextureData();
