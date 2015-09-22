@@ -7,12 +7,12 @@ namespace mce {
 }
 
 //Size : 88
-class TextureData {
+class TextureData : public ImageData {
     public:
     bool idk;                          //20
     //mce::Texture texture;
     char filler1[55];                  //21
-    std::vector<ImageData> imgVec;     //76
+    std::vector<ImageData> mipmaps;    //76
     
     public:
     TextureData();
