@@ -14,6 +14,7 @@ namespace mce {
 class Inventory;
 class PlayerChunkSource;
 class SkinInfoData;
+class ClientSkinInfoData;
 class BatchPacket;
 class ChunkSource;
 class Tick;
@@ -44,7 +45,7 @@ class Player : public Mob {
     char filler6[4];                            //3468
     TilePos spawnPos;                           //3472
     char filler7[32];                           //3484
-    SkinInfoData* skinData;                     //3516
+    ClientSkinInfoData* skinData;               //3516
     char filler8[12];                           //3520
     ItemInstance item;                          //3532
     char filler9[4];                            //3552
