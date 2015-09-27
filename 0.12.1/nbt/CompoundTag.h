@@ -40,7 +40,7 @@ class CompoundTag : public NamedTag {
     int* getIntArray(std::string const&) const;
     ListTag* getList(std::string const&) const;
     short getShort(std::string const&) const;
-    std::string getString(std::string const&) const;
+    std::string& getString(std::string const&) const;
     bool isEmpty() const;
     CompoundTag& operator=(CompoundTag&&);
     void put(std::string const&, std::unique_ptr<Tag>);

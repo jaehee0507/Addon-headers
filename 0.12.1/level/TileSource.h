@@ -5,7 +5,7 @@
 
 class Level;
 class ChunkSource;
-class Dimesion;
+class Dimension;
 class TileSourceListener;
 class FullTile;
 class TileID;
@@ -32,7 +32,7 @@ class TileSource {
     char filler1[8];                                            //4
     Level* level;                                               //12
     ChunkSource* chunkSource;                                   //16
-    Dimesion* dimesion;                                         //20
+    Dimension* dimesion;                                         //20
     std::vector<TileSourceListener*> tilelistenerVec;          //24
     char filler2[32];                                           //36
     

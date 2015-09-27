@@ -42,17 +42,15 @@ class Player : public Mob {
     Inventory* inventory;                       //3456
     char filler5[4];                            //3460
     PlayerChunkSource* chunkSource;             //3464
-    char filler6[4];                            //3468
-    TilePos spawnPos;                           //3472
-    char filler7[32];                           //3484
+    char filler6[48];                           //3468
     ClientSkinInfoData* skinData;               //3516
-    char filler8[12];                           //3520
+    char filler7[12];                           //3520
     ItemInstance item;                          //3532
-    char filler9[4];                            //3552
+    char filler8[4];                            //3552
     short sleepingTime;                         //3556
-    char filler10[10];                          //3558
+    char filler9[10];                           //3558
     BatchPacket* batchPacket;                   //3568
-    char filler11[16];                          //3572
+    TilePos spawnPos;                           //3572
     bool _isSleeping;                           //3584
     GameType* gamemode;                         //3588
     

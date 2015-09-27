@@ -6,8 +6,8 @@
 //Size : 140
 class GuiElementContainer : public GuiElement {
     public:
-    std::vector<GuiElement*> children;          //120
-    char filler1[8];                            //132
+    std::vector<std::shared_ptr<GuiElement>> children;          //120
+    char filler1[8];                                            //132
     
     public:
     GuiElementContainer(bool, bool, int, int, int, int);
@@ -30,6 +30,6 @@ class GuiElementContainer : public GuiElement {
     virtual void addChild(std::shared_ptr<GuiElement>);
     virtual void removeChild(std::shared_ptr<GuiElement>);
     virtual void clearAll();
-    std::vector<GuiElement*> getChildren();
-    std::vector<GuiElement*> getChildren() const;
+    std::vector<std::shared_ptr<GuiElement>> getChildren();
+    std::vector<std::shared_ptr<GuiElement>> getChildren() const;
 };

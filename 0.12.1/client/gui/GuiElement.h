@@ -46,7 +46,7 @@ class GuiElement : public GuiComponent {
     virtual void drawPressed(int);
     virtual void drawSliderSelected();
     virtual void onSelectedChanged();
-    virtual void hasChildren() const;
+    virtual bool hasChildren() const;
     void clearBackground();
     void isSelected();
     void setActiveAndVisibility(bool);
