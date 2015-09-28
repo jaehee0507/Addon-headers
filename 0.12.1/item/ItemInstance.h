@@ -15,7 +15,7 @@ class Level;
 //Size : 20
 class ItemInstance {
     public:
-    char filler1[2];        //0
+    unsigned char count;             //0
     short damage;           //2
     char filler2[4];        //4
     Item* item;             //8
@@ -45,8 +45,8 @@ class ItemInstance {
     void _setItem(int);
     void add(int);
     void canDestroySpecial(Tile*);
-    ItemInstance* clone(ItemInstance const*);
-    ItemInstance* cloneSafe(ItemInstance const*);
+    static ItemInstance* clone(ItemInstance const*);
+    static ItemInstance cloneSafe(ItemInstance const*);
     void fromTag(CompoundTag const&);
     int getAttackDamage(Entity*);
     short getAuxValue() const;
