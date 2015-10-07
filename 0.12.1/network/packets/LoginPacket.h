@@ -6,9 +6,13 @@
 class LoginPacket : public Packet {
     public:
     std::string name;                //16
-    char filler1[44];                //20
+    std::string protocol1;           //20
+    std::string protocol2;           //24
+    //mce::UUID uuid;                //40
+    char filler1[16];                //40
+    char filler2[8];                 //56
     bool isSkinSlim;                 //64
-    char filler2[3];                 //65
+    char filler3[3];                 //65
     char* skindata;                  //68
     
     public:

@@ -15,9 +15,9 @@ class Level;
 //Size : 20
 class ItemInstance {
     public:
-    unsigned char count;             //0
+    unsigned char count;    //0
     short damage;           //2
-    char filler2[4];        //4
+    CompoundTag* tag;       //4
     Item* item;             //8
     Tile* tile;             //12
     bool _isNull;           //16
@@ -54,7 +54,7 @@ class ItemInstance {
     std::string getCustomName() const;
     short getDamageValue() const;
     int getDestroySpeed(Tile*);
-    void getEffectName() const;
+    std::string getEffectName() const;
     void getEnchantsFromUserData() const;
     void getEnchantSlot() const;
     void getEnchantValue() const;

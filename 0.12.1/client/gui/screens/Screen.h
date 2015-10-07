@@ -14,6 +14,7 @@ class Button;
 class GuiElement;
 class StickDirection;
 class Font;
+class TextBox;
 
 //Size : 212
 class Screen : public AbstractScreen {
@@ -23,7 +24,8 @@ class Screen : public AbstractScreen {
     int height;                             //84
     MinecraftClient* mc;                    //88
     std::vector<Button*> buttonList;        //92
-    char filler2[36];                       //104
+    std::vector<TextBox*> textBoxList;      //104
+    char filler2[24];                       //104
     std::vector<GuiElement*> elementList;   //140
     char filler3[12];                       //152
     Font* fontObj;                          //164

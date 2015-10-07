@@ -1,6 +1,7 @@
 #pragma once
 
 #include "NetEventCallback.h"
+#include "RakNetGUID.h"
 #include "../level/LevelListener.h"
 
 class Minecraft;
@@ -9,9 +10,24 @@ class IRakNetInstance;
 class PacketSender;
 class ServerPlayer;
 class SkinInfoFactory;
+class BatchPacket;
+class RakNetInstance;
 class Player;
 
+//Size : 76
 class ServerNetworkHandler : public NetEventCallback, public LevelListener {
+    public:
+    char filler1[4];                //4
+    Minecraft* minecraft;           //8
+    Level* level;                   //12
+    GameMode* gamemode;             //16
+    RakNetInstance* instance;       //20
+    char filler2[8];                //24
+    RakNet::RakNetGUID guid;        //32
+    char filler3[18];               //42
+    BatchPacket* batchPacket;       //60
+    char filler4[12];               //64
+    
     public:
     ServerNetworkHandler(Minecraft*, Level&, GameMode*, IRakNetInstance&, PacketSender&, SkinInfoFactory&, Player*);
     virtual void onPlayerReady(Player&);

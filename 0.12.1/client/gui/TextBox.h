@@ -47,7 +47,7 @@ class TextBox : public GuiElement {
     virtual void loseFocus(MinecraftClient*);
     std::string _getClippedString(MinecraftClient*) const;
     int getKey();
-    std::string getText() const;
+    std::string& getText() const;
     bool isValidCharacter(std::string const&);
     void setName(std::string const&);
     void setText(std::string const&);

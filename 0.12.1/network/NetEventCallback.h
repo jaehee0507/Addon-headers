@@ -71,6 +71,9 @@ namespace mce {
 
 class NetEventCallback {
     public:
+    //void** vtable;
+    
+    public:
     virtual void onPlayerReady(Player&);
     virtual ~NetEventCallback();
     virtual void onConnect(RakNet::RakNetGUID const&);
