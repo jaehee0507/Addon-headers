@@ -2,6 +2,12 @@
 
 #include "IRakNetInstance.h"
 
+class NATState;
+class UpnpState;
+namespace RakNet {
+    class Packet;
+}
+
 //Size : 176
 class RakNetInstance : public IRakNetInstance {
     public:
@@ -18,6 +24,9 @@ class RakNetInstance : public IRakNetInstance {
     char filler5[4];                      //164
     PacketObserver* packetObserver;       //168
     Social::MultiPlayer* multiPlayer;     //172
+    
+    public:
+    static void* ServerIdentifier;
     
     public:
     RakNetInstance();
@@ -54,4 +63,11 @@ class RakNetInstance : public IRakNetInstance {
     virtual void getNatState();
     virtual int getUpnpState();
     virtual void tick();
+    void changeNatState(NATState, int, std::string const&);
+    void changeUpnpState(UpnpState, int, std::string const&);
+    void handleUnconnectedPong(std::string const&, RakNet::Packet const*, bool);
+    void natPongReceived(RakNet::SystemAddress);
+    void openNatConnection(RakNet::SystemAddress);
+    void stateToString(NATState) const;
+    void stateToString(UpnpState) const;
 };
