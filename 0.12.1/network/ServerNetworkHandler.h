@@ -17,7 +17,7 @@ class Player;
 //Size : 76
 class ServerNetworkHandler : public NetEventCallback, public LevelListener {
     public:
-    char filler1[4];                //4
+    //void** vtable;                //4
     Minecraft* minecraft;           //8
     Level* level;                   //12
     GameMode* gamemode;             //16

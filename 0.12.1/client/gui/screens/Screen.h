@@ -25,7 +25,7 @@ class Screen : public AbstractScreen {
     MinecraftClient* mc;                    //88
     std::vector<Button*> buttonList;        //92
     std::vector<TextBox*> textBoxList;      //104
-    char filler2[24];                       //104
+    char filler2[24];                       //116
     std::vector<GuiElement*> elementList;   //140
     char filler3[12];                       //152
     Font* fontObj;                          //164
