@@ -48,7 +48,8 @@ class MinecraftClient : public Minecraft {
     ExternalServerFile* serverFile;      //164
     Textures* textures;                  //168
     Font* font;                          //172
-    char filler2[108];                   //176
+    Font* enchant_font;                  //176
+    char filler2[104];                   //180
     LocalPlayer* player;                 //284
     MinecraftInputHandler* inputHandler; //288
     Gui* gui;                            //292
