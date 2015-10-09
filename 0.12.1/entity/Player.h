@@ -2,6 +2,7 @@
 
 #include "Mob.h"
 #include "Abilities.h"
+#include "../gamemode/GameType.h"
 #include "../item/ItemInstance.h"
 #include "../attributes/Attribute.h"
 #include "../util/TilePos.h"
@@ -52,7 +53,7 @@ class Player : public Mob {
     BatchPacket* batchPacket;                   //3568
     TilePos spawnPos;                           //3572
     bool _isSleeping;                           //3584
-    GameType* gamemode;                         //3588
+    GameType gametype;                          //3588
     
     public:
     static float DEFAULT_FLY_SPEED;

@@ -7,7 +7,7 @@ class TextureData;
 class SkinInfoData {
     public:
     //void** vtable;                //0
-    bool _isSlim;                    //4
+    bool _isSlim;                   //4
     
     public:
     SkinInfoData(bool);

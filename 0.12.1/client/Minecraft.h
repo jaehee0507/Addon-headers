@@ -2,6 +2,7 @@
 
 #include <memory>
 #include "App.h"
+#include "../gamemode/GameType.h"
 
 class Vibration;
 class ExternalFileLevelStorageSource;
@@ -11,7 +12,6 @@ class RakNetInstance;
 class RakNetPacketSender;
 class TerrainAtlas;
 class GameMode;
-class GameType;
 class Timer;
 class Mob;
 class Player;
