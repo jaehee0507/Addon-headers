@@ -2,12 +2,14 @@
 
 #include "SkinInfoData.h"
 
+class Textures;
+
 class ClientSkinInfoData : public SkinInfoData {
     public:
     TextureData* textureData;          //8
     
     public:
-    static void* textures;
+    static Textures* textures;
     
     public:
     ClientSkinInfoData(bool);

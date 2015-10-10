@@ -4,11 +4,14 @@
 #include "AppPlatformListener.h"
 
 class AppContext;
+class TextureAtlas;
 
 //Size : 28
 class App : public AppPlatformListener {
     public:
-    char filler1[20];           //8
+    char filler1[4];                   //8
+    TextureAtlas* textureAtlas;        //12
+    char filler2[12];                  //16
     
     public:
     App(int, char**);
