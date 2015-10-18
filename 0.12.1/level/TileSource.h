@@ -24,6 +24,7 @@ class Brightness;
 class Tile;
 class TileTickingQueue;
 class LevelChunk;
+class HitResult;
 
 //Size : 68
 class TileSource {
@@ -32,8 +33,8 @@ class TileSource {
     char filler1[8];                                            //4
     Level* level;                                               //12
     ChunkSource* chunkSource;                                   //16
-    Dimension* dimesion;                                         //20
-    std::vector<TileSourceListener*> tilelistenerVec;          //24
+    Dimension* dimesion;                                        //20
+    std::vector<TileSourceListener*> tilelistenerVec;           //24
     char filler2[32];                                           //36
     
     public:

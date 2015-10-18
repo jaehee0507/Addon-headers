@@ -19,7 +19,7 @@ class DeathScreen : public Screen {
     virtual ~DeathScreen();
     virtual void tick();
     virtual void handleButtonPress(MinecraftClient*, short);
-    virtual void renderGameBehind() const;
+    virtual bool renderGameBehind() const;
     virtual void render(int, int, float);
     virtual void init();
     virtual void setupPositions();

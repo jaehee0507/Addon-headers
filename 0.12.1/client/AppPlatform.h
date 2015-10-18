@@ -4,7 +4,9 @@
 
 class ImageData;
 namespace UI {
-    class ValidCharacterFlag;
+    enum ValidCharacterFlag {
+        
+    };
 }
 class ImagePickingCallback;
 class LoginInformation;

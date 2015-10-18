@@ -5,6 +5,7 @@
 
 class AppContext;
 class TextureAtlas;
+class AppPlatform_android;
 
 //Size : 28
 class App : public AppPlatformListener {
@@ -16,7 +17,7 @@ class App : public AppPlatformListener {
     public:
     App(int, char**);
     virtual ~App();
-    virtual void platform();
+    virtual AppPlatform_android* platform();
     virtual void audioEngineOn();
     virtual void audioEngineOff();
     virtual void muteAudio();

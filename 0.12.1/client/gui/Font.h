@@ -13,6 +13,7 @@ namespace mce {
     class MaterialPtr;
 }
 
+//Size : 2300
 class Font : public AppPlatformListener {
     public:
     class GlyphQuad {
@@ -23,6 +24,9 @@ class Font : public AppPlatformListener {
         public:
         void render(mce::MaterialPtr const&) const;
     };
+    
+    public:
+    char filler1[2292];
     
     public:
     Font(Options*, std::string const&, Textures*);
