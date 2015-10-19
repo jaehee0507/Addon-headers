@@ -8,7 +8,7 @@ class Abilities {
     bool flying;                  //1
     bool mayfly;                  //2
     bool instabuild;              //3
-    int filler;                   //4
+    int filler;                   //4; maybe this is a bool noclip?
     float flyingSpeed;            //8
     float walkingSpeed;           //12
     
