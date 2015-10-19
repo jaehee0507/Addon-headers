@@ -4,5 +4,5 @@
 
 class PathfinderMob : public Mob {
 public:
-	
+	PathfinderMob(TileSource&);
 };
