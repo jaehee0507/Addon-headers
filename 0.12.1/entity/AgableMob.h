@@ -4,5 +4,5 @@
 
 class AgableMob : public PathfinderMob {
 public:
-  
+	AgableMob(TileSource&);
 };
