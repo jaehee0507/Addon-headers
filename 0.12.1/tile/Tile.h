@@ -61,6 +61,7 @@ class Tile {
     static Tile* deadBush;
     static Tile* diamondBlock;
     static Tile* diamondOre;
+    static Tile* dirt;
     static Tile* door_iron;
     static Tile* door_wood;
     static Tile* emeraldBlock;
