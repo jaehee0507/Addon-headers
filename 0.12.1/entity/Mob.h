@@ -123,8 +123,8 @@ class Mob : public Entity {
     virtual void hurtArmor(int);
     virtual void setArmor(int, ItemInstance const*);
     virtual void getArmor(int) const;
-    virtual void getAllArmor() const;
-    virtual void getAllArmor();
+    virtual std::vector<ItemInstance const*> getAllArmor() const;
+    virtual std::vector<ItemInstance const*> getAllArmor();
     virtual void getArmorTypeHash();
     virtual void dropHeldItem();
     virtual void dropAllArmor();
